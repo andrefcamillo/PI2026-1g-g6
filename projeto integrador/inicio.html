@@ -20,6 +20,46 @@
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             padding-left: 25px;
         }
+        * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.7rem;
+}
+ul {
+  width: 100vw;
+  height: 300px;
+  padding: 20px;
+  display: flex;
+  gap: 4vw;
+}
+li {
+  list-style-type: none;
+  background-color: #eeeeee;
+  border: 1px solid #dddddd;
+  padding: 20px;
+
+  flex: 0 0 100%;
+}
+
+li:nth-child(even) {
+  background-color: cyan;
+}
+ul {
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+li {
+  scroll-snap-align: center;
+}
+
     </style>
 </head>
 <body>
@@ -30,6 +70,23 @@
     </div>
     <div class="logobarra">
         <img src="logotecnosport.png" alt="logotecnosport" width="70" height="50">
+    </div>
+    <div>
+        <h1>CSS carousel single item per page</h1>
+<ul>
+  <li data-accName="Item 1">
+    <h2>Page 1</h2>
+  </li>
+  <li data-accName="Item 2">
+    <h2>Page 2</h2>
+  </li>
+  <li data-accName="Item 3">
+    <h2>Page 3</h2>
+  </li>
+  <li data-accName="Item 4">
+    <h2>Page 4</h2>
+  </li>
+</ul>
     </div>
 </body>
 </html>

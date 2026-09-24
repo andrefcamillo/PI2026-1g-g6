@@ -184,6 +184,7 @@
                 font-size: 16px; 
                 line-height: 1.6; 
                 margin: 0;
+                text-align: justify;
             } 
 
                 .caixa-imagem{ 
@@ -264,6 +265,8 @@
                 background-color: #C1C1C1;
                 border-radius: 15px 15px 0 0;
             }
+
+            /*Essa parte em especifico acho bom comentar essa parte seria alguns de detalhes que tem usando css, eu fui pesquizando e textando coisas para poder entender não sei se é exatamente isso mais ali eu usei por meio de angulos pq teve uma parte em que eu estava textando que colocando uma reta em 180 graus ela ficou reta então fui fazendo assim usando detalhes para fazer retas e triangulos de fundo, e um pouco dificil mexer com isso pq tem que ir mechendo milimetricamnete para fazer isso, mas com pesquizas para saber se utilizar melhor consegui fazer algo com oque eu gostaria talvez não tenha ficado muito bom mas consegui deixar com algo parecido do wifreme. */
 
             .logo-div1{
                 height: 60px;
@@ -618,7 +621,7 @@
             .links1 a:hover{
                 text-decoration: underline;
             }
-
+            /*Pelo que me recordo acho que daqui para baixo e todo o codigo do carrosel como ja sitei no Java Script e no Html, foi feito utilizando a ia, O java Script eu fui atras de entender e também pq eu fui falndo como eu queria que funcionasse mas o html e o css eu não consegui entender muito bem o funcionamento por que para mim talvez seja um pouco avançado de mais sobre oq eu sei sobre html e css.*/
             .carousel-header{
                 text-align:center;
                 font-family: 'Segoe UI', system-ui, sans-serif;
@@ -763,3 +766,35 @@
                 .carousel-wrap{ --center: 160px; --side: 110px; gap:8px; }
                 .nav{ width:36px; height:36px; }
             }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            .caixa-imagem {
+                perspective: 1000px;
+                cursor: pointer;
+                }
+
+                .card-image {
+                transition: transform 0.1s ease-out, box-shadow 0.1s ease-out;
+                transform-style: preserve-3d;
+                }
+
+                .caixa-imagem:hover .card-image {
+                box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+                }
